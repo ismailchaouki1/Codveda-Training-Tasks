@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chaouki Ismail — Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="nav-logo">Chaouki<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <main>
+      <div class="page-header">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Contact</span>
+        </div>
+        <h1>Get In <span>Touch</span></h1>
+      </div>
+
+      <section>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Let's Work Together</h2>
+            <p>
+              I'm open to internship opportunities, freelance projects, or just a good tech
+              conversation. I'll get back to you as soon as possible.
+            </p>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📧</div>
+              <div class="contact-detail-text">
+                <strong>Email</strong>
+                <span>ismailchaouki111@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📞</div>
+              <div class="contact-detail-text">
+                <strong>Phone</strong>
+                <span>0695249432</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📍</div>
+              <div class="contact-detail-text">
+                <strong>Location</strong>
+                <span>Tinghir, Morocco</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">🎓</div>
+              <div class="contact-detail-text">
+                <strong>Currently</strong>
+                <span>OFPPT Tinghir — Full Stack Web</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <div
+              id="formMsg"
+              style="
+                display: none;
+                padding: 0.75rem 1rem;
+                border-radius: 7px;
+                margin-bottom: 1.25rem;
+                font-size: 0.9rem;
+              "
+            ></div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" placeholder="Your first name" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" placeholder="Your last name" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" placeholder="your@email.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject">
+                <option value="">Select a topic…</option>
+                <option>Internship Opportunity</option>
+                <option>Freelance Project</option>
+                <option>Collaboration</option>
+                <option>General Question</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                placeholder="Tell me about your project or opportunity…"
+              ></textarea>
+            </div>
+
+            <button
+              class="btn btn-primary"
+              id="submitBtn"
+              style="width: 100%; justify-content: center"
+            >
+              Send Message →
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">Chaouki<span style="color: var(--accent)">.</span></div>
+          <p>
+            Full Stack Web Developer based in Tinghir, Morocco. Open to internships and freelance
+            projects.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Skills</h4>
+          <ul>
+            <li><a href="#">React.js / Laravel</a></li>
+            <li><a href="#">HTML / CSS / JS</a></li>
+            <li><a href="#">Python / CTkinter</a></li>
+            <li><a href="#">MySQL / REST APIs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:ismailchaouki111@gmail.com">ismailchaouki111@gmail.com</a></li>
+            <li><a href="tel:0695249432">0695249432</a></li>
+            <li><a href="#">Tinghir, Morocco</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Chaouki Ismail. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="GitHub">⌥</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="GitLab">🦊</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.getElementById('hamburger');
+      const links = document.getElementById('navLinks');
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('open');
+        links.classList.toggle('open');
+      });
+      links.querySelectorAll('a').forEach((a) =>
+        a.addEventListener('click', () => {
+          btn.classList.remove('open');
+          links.classList.remove('open');
+        }),
+      );
+
+      document.getElementById('submitBtn').addEventListener('click', () => {
+        const firstName = document.getElementById('firstName').value.trim();
+        const lastName = document.getElementById('lastName').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const msgEl = document.getElementById('formMsg');
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!firstName || !lastName || !email || !message) {
+          msgEl.style.display = 'block';
+          msgEl.style.background = 'rgba(255,80,80,.12)';
+          msgEl.style.border = '1px solid rgba(255,80,80,.3)';
+          msgEl.style.color = '#ff6b6b';
+          msgEl.textContent = '⚠ Please fill in all required fields.';
+          return;
+        }
+        if (!emailRegex.test(email)) {
+          msgEl.style.display = 'block';
+          msgEl.style.background = 'rgba(255,80,80,.12)';
+          msgEl.style.border = '1px solid rgba(255,80,80,.3)';
+          msgEl.style.color = '#ff6b6b';
+          msgEl.textContent = '⚠ Please enter a valid email address.';
+          return;
+        }
+        msgEl.style.display = 'block';
+        msgEl.style.background = 'rgba(108,99,255,.12)';
+        msgEl.style.border = '1px solid rgba(108,99,255,.35)';
+        msgEl.style.color = '#a29dff';
+        msgEl.textContent = "✓ Message sent! I'll get back to you as soon as possible.";
+        ['firstName', 'lastName', 'email', 'subject', 'message'].forEach((id) => {
+          document.getElementById(id).value = '';
+        });
+      });
+    </script>
+  </body>
+</html>
