@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chaouki Ismail — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-trail" id="trail"></div>
+
+    <nav>
+      <a href="#hero" class="nav-logo">Chaouki <em>Ismail</em></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-btn">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <main>
+      <section id="hero">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+
+        <div class="hero-left">
+          <div class="hero-status">
+            <div class="status-dot"></div>
+            Available for opportunities
+          </div>
+          <h1 class="hero-name">
+            <span>FULL</span><br />
+            <span class="italic">Stack</span><br />
+            <span class="outline">DEV.</span>
+          </h1>
+          <div class="typewriter-wrap">
+            <span class="typewriter-label">I build →</span>
+            <span id="typewriter"></span>
+          </div>
+          <p class="hero-bio">
+            Hi, I'm <strong>Chaouki Ismail</strong> — a 22-year-old developer from Tinghir, Morocco.
+            I craft modern, responsive web experiences using React, Laravel &amp; Python, from
+            concept to deployment.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-filled">View Projects →</a>
+            <a href="#contact" class="btn-outline">Let's Talk</a>
+          </div>
+          <div class="scroll-hint">
+            <div class="scroll-pill"><div class="scroll-dot"></div></div>
+            Scroll to explore
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card-main">
+            <div class="avatar-ring">👨‍💻</div>
+            <div class="hc-name">Chaouki Ismail</div>
+            <div class="hc-role">Full Stack Developer</div>
+            <div class="hc-divider"></div>
+            <div class="hc-info-row">
+              <div class="hc-info-icon">📍</div>
+              <div>
+                <div class="hc-info-label">Location</div>
+                <div class="hc-info-val">Tinghir, Morocco</div>
+              </div>
+            </div>
+            <div class="hc-info-row">
+              <div class="hc-info-icon">🎓</div>
+              <div>
+                <div class="hc-info-label">Education</div>
+                <div class="hc-info-val">OFPPT — Full Stack Web</div>
+              </div>
+            </div>
+            <div class="hc-info-row">
+              <div class="hc-info-icon">📧</div>
+              <div>
+                <div class="hc-info-label">Email</div>
+                <div class="hc-info-val">ismailchaouki111@gmail.com</div>
+              </div>
+            </div>
+            <div class="hc-info-row">
+              <div class="hc-info-icon">📞</div>
+              <div>
+                <div class="hc-info-label">Phone</div>
+                <div class="hc-info-val">0695249432</div>
+              </div>
+            </div>
+            <div class="hc-tags">
+              <span class="hc-tag">React</span>
+              <span class="hc-tag">Laravel</span>
+              <span class="hc-tag">Python</span>
+              <span class="hc-tag">MySQL</span>
+              <span class="hc-tag">Git</span>
+              <span class="hc-tag">Figma</span>
+              <span class="hc-tag">GSAP</span>
+              <span class="hc-tag">PHP</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-wrap">
+        <div class="section-header">
+          <div>
+            <div class="s-eyebrow reveal">Skills</div>
+            <h2 class="s-title reveal">MY <em>Technical</em><br />Arsenal</h2>
+          </div>
+          <p class="s-sub reveal">From pixel-perfect UIs to solid backends — I handle it all.</p>
+        </div>
+        <div class="skills-layout">
+          <div>
+            <div class="skill-bar-group reveal reveal-delay-1">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">React.js / JavaScript</span>
+                <span class="skill-bar-pct">85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--pct: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-group reveal reveal-delay-2">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">HTML5 / CSS3 / SASS</span>
+                <span class="skill-bar-pct">90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--pct: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-group reveal reveal-delay-3">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">Laravel 12 / PHP</span>
+                <span class="skill-bar-pct">78%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--pct: 78%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-group reveal reveal-delay-4">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">Python / CTkinter</span>
+                <span class="skill-bar-pct">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--pct: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-group reveal">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">MySQL / REST APIs</span>
+                <span class="skill-bar-pct">75%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--pct: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-group reveal">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">UI / UX / Figma</span>
+                <span class="skill-bar-pct">70%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--pct: 70%"></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="s-sub reveal" style="margin-bottom: 2rem">
+              Tools &amp; Technologies I use daily
+            </p>
+            <div class="tools-grid">
+              <div class="tool-chip reveal reveal-delay-1">
+                <div class="tool-chip-icon">⚛️</div>
+                <div class="tool-chip-name">React</div>
+              </div>
+              <div class="tool-chip reveal reveal-delay-2">
+                <div class="tool-chip-icon">🔴</div>
+                <div class="tool-chip-name">Laravel</div>
+              </div>
+              <div class="tool-chip reveal reveal-delay-3">
+                <div class="tool-chip-icon">🐍</div>
+                <div class="tool-chip-name">Python</div>
+              </div>
+              <div class="tool-chip reveal reveal-delay-1">
+                <div class="tool-chip-icon">🗄️</div>
+                <div class="tool-chip-name">MySQL</div>
+              </div>
+              <div class="tool-chip reveal reveal-delay-2">
+                <div class="tool-chip-icon">🎨</div>
+                <div class="tool-chip-name">Figma</div>
+              </div>
+              <div class="tool-chip reveal reveal-delay-3">
+                <div class="tool-chip-icon">🌿</div>
+                <div class="tool-chip-name">Git</div>
+              </div>
+              <div class="tool-chip reveal reveal-delay-1">
+                <div class="tool-chip-icon">📮</div>
+                <div class="tool-chip-name">Postman</div>
+              </div>
+              <div class="tool-chip reveal reveal-delay-2">
+                <div class="tool-chip-icon">⚡</div>
+                <div class="tool-chip-name">GSAP</div>
+              </div>
+              <div class="tool-chip reveal reveal-delay-3">
+                <div class="tool-chip-icon">🖥️</div>
+                <div class="tool-chip-name">VS Code</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-wrap">
+        <div class="section-header">
+          <div>
+            <div class="s-eyebrow reveal">Work</div>
+            <h2 class="s-title reveal">Featured <em>Projects</em></h2>
+          </div>
+          <p class="s-sub reveal">Real projects built from scratch with modern technologies.</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card reveal reveal-delay-1">
+            <div class="project-card-top p-bg-1">
+              <div class="p-num">01</div>
+              <div class="p-icon">🚗</div>
+            </div>
+            <div class="project-card-body">
+              <div class="p-status">
+                <div class="p-status-dot"></div>
+                Completed
+              </div>
+              <div class="p-title">Auto-École Desktop App</div>
+              <p class="p-desc">
+                Full desktop GUI for managing a driving school — students, sessions, payments &amp;
+                vehicles. Complete responsive interface with JSON backend.
+              </p>
+              <div class="p-tags">
+                <span class="p-tag">Python</span>
+                <span class="p-tag">CTkinter</span>
+                <span class="p-tag">JSON</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card reveal reveal-delay-2">
+            <div class="project-card-top p-bg-2">
+              <div class="p-num">02</div>
+              <div class="p-icon">🛒</div>
+            </div>
+            <div class="project-card-body">
+              <div class="p-status">
+                <div class="p-status-dot"></div>
+                Completed
+              </div>
+              <div class="p-title">CRUD Product Manager</div>
+              <p class="p-desc">
+                Dynamic product management system — add, delete, update and display products.
+                Internal mini-system for a digital boutique.
+              </p>
+              <div class="p-tags">
+                <span class="p-tag">HTML</span>
+                <span class="p-tag">CSS</span>
+                <span class="p-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card reveal reveal-delay-3">
+            <div class="project-card-top p-bg-3">
+              <div class="p-num">03</div>
+              <div class="p-icon">🌤️</div>
+            </div>
+            <div class="project-card-body">
+              <div class="p-status">
+                <div class="p-status-dot"></div>
+                Completed
+              </div>
+              <div class="p-title">Weather App</div>
+              <p class="p-desc">
+                Dynamic city-based weather search with modern MUI interface. Integrates OpenWeather
+                API via Axios with full React state management.
+              </p>
+              <div class="p-tags">
+                <span class="p-tag">React</span>
+                <span class="p-tag">Material UI</span>
+                <span class="p-tag">Axios</span>
+                <span class="p-tag">API</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card reveal reveal-delay-1">
+            <div class="project-card-top p-bg-4">
+              <div class="p-num">04</div>
+              <div class="p-icon">🕌</div>
+            </div>
+            <div class="project-card-body">
+              <div class="p-status">
+                <div class="p-status-dot"></div>
+                Completed
+              </div>
+              <div class="p-title">Prayer Times App</div>
+              <p class="p-desc">
+                Elegant location-based prayer times display. Clean React state management with MUI
+                design and prayer API integration.
+              </p>
+              <div class="p-tags">
+                <span class="p-tag">React</span>
+                <span class="p-tag">Material UI</span>
+                <span class="p-tag">API</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card reveal reveal-delay-2">
+            <div class="project-card-top p-bg-5">
+              <div class="p-num">05</div>
+              <div class="p-icon">🏫</div>
+            </div>
+            <div class="project-card-body">
+              <div class="p-status wip">
+                <div class="p-status-dot"></div>
+                In Progress
+              </div>
+              <div class="p-title">SaaS Auto-École Web</div>
+              <p class="p-desc">
+                Full web SaaS platform for driving school management — cloud version of the desktop
+                app with a Laravel backend and React frontend.
+              </p>
+              <div class="p-tags">
+                <span class="p-tag">Laravel</span>
+                <span class="p-tag">React</span>
+                <span class="p-tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-wrap">
+        <div class="contact-layout">
+          <div class="contact-left">
+            <div class="s-eyebrow reveal" style="color: var(--copper2)">Contact</div>
+            <h2 class="s-title reveal" style="color: var(--cream)">
+              Let's Build<br /><em>Something</em>
+            </h2>
+            <div class="contact-giant-text reveal">
+              Drop me a line at<br />
+              <a href="mailto:ismailchaouki111@gmail.com">ismailchaouki111@gmail.com</a>
+            </div>
+            <div class="reveal">
+              <div class="c-row">
+                <div class="c-icon">📞</div>
+                <div>
+                  <div class="c-label">Phone</div>
+                  <div class="c-val">0695249432</div>
+                </div>
+              </div>
+              <div class="c-row">
+                <div class="c-icon">📍</div>
+                <div>
+                  <div class="c-label">Location</div>
+                  <div class="c-val">Tinghir, Morocco</div>
+                </div>
+              </div>
+              <div class="c-row">
+                <div class="c-icon">🎓</div>
+                <div>
+                  <div class="c-label">Currently at</div>
+                  <div class="c-val">OFPPT Tinghir — Full Stack Web</div>
+                </div>
+              </div>
+              <div class="c-row">
+                <div class="c-icon">✅</div>
+                <div>
+                  <div class="c-label">Open to</div>
+                  <div class="c-val">Internships · Freelance · Collaboration</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal">
+            <div class="cf-title">Send a Message</div>
+            <div class="cf-msg" id="cfMsg"></div>
+            <div class="cf-row">
+              <div class="cf-field">
+                <label>First Name *</label>
+                <input type="text" id="cfFirst" placeholder="Your first name" />
+              </div>
+              <div class="cf-field">
+                <label>Last Name *</label>
+                <input type="text" id="cfLast" placeholder="Your last name" />
+              </div>
+            </div>
+            <div class="cf-field">
+              <label>Email *</label>
+              <input type="email" id="cfEmail" placeholder="your@email.com" />
+            </div>
+            <div class="cf-field">
+              <label>Subject</label>
+              <select id="cfSubject">
+                <option value="">Select a topic…</option>
+                <option>Internship Opportunity</option>
+                <option>Freelance Project</option>
+                <option>Collaboration</option>
+                <option>General Question</option>
+              </select>
+            </div>
+            <div class="cf-field">
+              <label>Message *</label>
+              <textarea
+                id="cfMsg2"
+                placeholder="Tell me about your project or opportunity…"
+              ></textarea>
+            </div>
+            <button class="cf-submit" id="cfSubmit">Send Message →</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo">Chaouki <em>Ismail</em></div>
+      <p>© 2025 Chaouki Ismail. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub">GH</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="GitLab">GL</a>
+      </div>
+    </footer>
+
+    <script>
+      const cur = document.getElementById('cursor');
+      const trl = document.getElementById('trail');
+      let mx = 0,
+        my = 0,
+        tx = 0,
+        ty = 0;
+      document.addEventListener('mousemove', (e) => {
+        mx = e.clientX;
+        my = e.clientY;
+        cur.style.left = mx + 'px';
+        cur.style.top = my + 'px';
+      });
+      (function loop() {
+        tx += (mx - tx) * 0.13;
+        ty += (my - ty) * 0.13;
+        trl.style.left = tx + 'px';
+        trl.style.top = ty + 'px';
+        requestAnimationFrame(loop);
+      })();
+      document.querySelectorAll('a,button,.project-card,.hc-tag,.tool-chip').forEach((el) => {
+        el.addEventListener('mouseenter', () => cur.classList.add('big'));
+        el.addEventListener('mouseleave', () => cur.classList.remove('big'));
+      });
+
+      const btn = document.getElementById('hamburger'),
+        nav = document.getElementById('navLinks');
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('open');
+        nav.classList.toggle('open');
+      });
+      nav.querySelectorAll('a').forEach((a) =>
+        a.addEventListener('click', () => {
+          btn.classList.remove('open');
+          nav.classList.remove('open');
+        }),
+      );
+
+      const words = [
+        'Web Applications',
+        'React Frontends',
+        'Laravel APIs',
+        'Python Desktop Apps',
+        'Responsive UIs',
+        'SaaS Platforms',
+      ];
+      let wi = 0,
+        ci = 0,
+        deleting = false;
+      const tw = document.getElementById('typewriter');
+      function type() {
+        const w = words[wi];
+        if (!deleting) {
+          tw.textContent = w.slice(0, ++ci);
+          if (ci === w.length) {
+            deleting = true;
+            setTimeout(type, 1800);
+            return;
+          }
+        } else {
+          tw.textContent = w.slice(0, --ci);
+          if (ci === 0) {
+            deleting = false;
+            wi = (wi + 1) % words.length;
+          }
+        }
+        setTimeout(type, deleting ? 55 : 90);
+      }
+      type();
+
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add('visible');
+              e.target
+                .querySelectorAll('.skill-bar-fill')
+                .forEach((b) => b.classList.add('animate'));
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+      document.querySelectorAll('.reveal').forEach((el) => obs.observe(el));
+
+      document.getElementById('cfSubmit').addEventListener('click', () => {
+        const f = document.getElementById('cfFirst').value.trim();
+        const l = document.getElementById('cfLast').value.trim();
+        const e = document.getElementById('cfEmail').value.trim();
+        const m = document.getElementById('cfMsg2').value.trim();
+        const msg = document.getElementById('cfMsg');
+        const rx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        msg.className = 'cf-msg';
+        if (!f || !l || !e || !m) {
+          msg.classList.add('err');
+          msg.style.display = 'block';
+          msg.textContent = '⚠ Please fill in all required fields.';
+          return;
+        }
+        if (!rx.test(e)) {
+          msg.classList.add('err');
+          msg.style.display = 'block';
+          msg.textContent = '⚠ Please enter a valid email address.';
+          return;
+        }
+        msg.classList.add('ok');
+        msg.style.display = 'block';
+        msg.textContent = "✓ Message sent! I'll get back to you soon.";
+        ['cfFirst', 'cfLast', 'cfEmail', 'cfSubject', 'cfMsg2'].forEach((id) => {
+          const el = document.getElementById(id);
+          if (el) el.value = '';
+        });
+      });
+    </script>
+  </body>
+</html>
