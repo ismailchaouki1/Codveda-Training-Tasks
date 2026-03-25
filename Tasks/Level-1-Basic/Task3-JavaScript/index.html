@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chaouki Ismail — JS Interactivity</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scanlines"></div>
+    <div class="cursor" id="cursor"></div>
+
+    <nav>
+      <div class="nav-logo"><span class="blink">&gt;</span> CI<span class="accent">_</span>DEV</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#dropdowns">Dropdowns</a></li>
+        <li><a href="#modals">Modals</a></li>
+        <li><a href="#form">Form</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="terminal-bar">
+            <span class="tb-dot red"></span>
+            <span class="tb-dot yellow"></span>
+            <span class="tb-dot green"></span>
+            <span class="tb-title">javascript_interactivity.js</span>
+          </div>
+          <div class="terminal-body">
+            <p class="t-line"><span class="t-comment">// Level 1 — Task 3</span></p>
+            <p class="t-line">
+              <span class="t-keyword">const</span> <span class="t-var">developer</span> = {
+            </p>
+            <p class="t-line pl">name: <span class="t-str">"Chaouki Ismail"</span>,</p>
+            <p class="t-line pl">
+              stack: [<span class="t-str">"HTML"</span>, <span class="t-str">"CSS"</span>,
+              <span class="t-str">"JavaScript"</span>],
+            </p>
+            <p class="t-line pl">task: <span class="t-str">"Add interactivity to the web"</span></p>
+            <p class="t-line">};</p>
+            <p class="t-line">&nbsp;</p>
+            <p class="t-line">
+              <span class="t-comment">// Features: dropdowns · modals · form validation</span>
+            </p>
+            <p class="t-line">
+              <span class="t-keyword">console</span>.<span class="t-fn">log</span>(<span
+                class="t-str"
+                >"Building awesome things..."</span
+              >) <span class="blink">|</span>
+            </p>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="feature-badge">
+            <div class="fb-icon">▼</div>
+            <div class="fb-label">Dropdowns</div>
+          </div>
+          <div class="feature-badge">
+            <div class="fb-icon">◈</div>
+            <div class="fb-label">Modals</div>
+          </div>
+          <div class="feature-badge">
+            <div class="fb-icon">✓</div>
+            <div class="fb-label">Validation</div>
+          </div>
+          <div class="feature-badge">
+            <div class="fb-icon">⚡</div>
+            <div class="fb-label">Events</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="dropdowns">
+        <div class="section-tag">// 01 — Dropdowns</div>
+        <h2 class="section-title">Custom <span>Dropdowns</span></h2>
+        <p class="section-sub">
+          Click to open. Click outside or press ESC to close. Built with vanilla JS event listeners.
+        </p>
+
+        <div class="dropdowns-grid">
+          <div class="dropdown-block">
+            <div class="block-label">SELECT SKILL</div>
+            <div class="dropdown" id="dd1">
+              <button class="dd-trigger" data-target="dd1">
+                <span class="dd-value">Choose a skill…</span>
+                <span class="dd-arrow">▼</span>
+              </button>
+              <ul class="dd-menu">
+                <li data-val="React.js">⚛️ React.js</li>
+                <li data-val="Laravel 12">🔴 Laravel 12</li>
+                <li data-val="Python">🐍 Python</li>
+                <li data-val="JavaScript ES6+">⚡ JavaScript ES6+</li>
+                <li data-val="MySQL">🗄️ MySQL</li>
+                <li data-val="Figma">🎨 Figma</li>
+              </ul>
+            </div>
+            <div class="dd-output" id="dd1-output"></div>
+          </div>
+
+          <div class="dropdown-block">
+            <div class="block-label">SELECT PROJECT</div>
+            <div class="dropdown" id="dd2">
+              <button class="dd-trigger" data-target="dd2">
+                <span class="dd-value">Choose a project…</span>
+                <span class="dd-arrow">▼</span>
+              </button>
+              <ul class="dd-menu">
+                <li data-val="Auto-École Desktop App">🚗 Auto-École Desktop App</li>
+                <li data-val="CRUD Product Manager">🛒 CRUD Product Manager</li>
+                <li data-val="Weather App">🌤️ Weather App</li>
+                <li data-val="Prayer Times App">🕌 Prayer Times App</li>
+                <li data-val="SaaS Auto-École Web">🏫 SaaS Auto-École Web</li>
+              </ul>
+            </div>
+            <div class="dd-output" id="dd2-output"></div>
+          </div>
+
+          <div class="dropdown-block">
+            <div class="block-label">SELECT LANGUAGE</div>
+            <div class="dropdown" id="dd3">
+              <button class="dd-trigger" data-target="dd3">
+                <span class="dd-value">Choose a language…</span>
+                <span class="dd-arrow">▼</span>
+              </button>
+              <ul class="dd-menu">
+                <li data-val="Tamazight — Native">🇲🇦 Tamazight — Native</li>
+                <li data-val="Arabic — Fluent">🇲🇦 Arabic — Fluent</li>
+                <li data-val="English — Fluent">🇬🇧 English — Fluent</li>
+                <li data-val="French — Intermediate">🇫🇷 French — Intermediate</li>
+              </ul>
+            </div>
+            <div class="dd-output" id="dd3-output"></div>
+          </div>
+
+          <div class="dropdown-block">
+            <div class="block-label">SELECT TOOL</div>
+            <div class="dropdown" id="dd4">
+              <button class="dd-trigger" data-target="dd4">
+                <span class="dd-value">Choose a tool…</span>
+                <span class="dd-arrow">▼</span>
+              </button>
+              <ul class="dd-menu">
+                <li data-val="VS Code">🖥️ VS Code</li>
+                <li data-val="Git & GitHub">🌿 Git & GitHub</li>
+                <li data-val="Postman">📮 Postman</li>
+                <li data-val="Figma">🎨 Figma</li>
+                <li data-val="XAMPP">⚙️ XAMPP</li>
+                <li data-val="Jira">📋 Jira</li>
+              </ul>
+            </div>
+            <div class="dd-output" id="dd4-output"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="modals">
+        <div class="section-tag">// 02 — Modals</div>
+        <h2 class="section-title">Interactive <span>Modals</span></h2>
+        <p class="section-sub">
+          Four modal types. Close via button, backdrop click, or the ESC key.
+        </p>
+
+        <div class="modals-grid">
+          <button class="modal-trigger-btn" data-modal="modal-info">
+            <span class="mtb-icon">ℹ</span>
+            <span class="mtb-label">Info Modal</span>
+            <span class="mtb-sub">About the developer</span>
+          </button>
+          <button class="modal-trigger-btn success" data-modal="modal-success">
+            <span class="mtb-icon">✓</span>
+            <span class="mtb-label">Success Modal</span>
+            <span class="mtb-sub">Task completed</span>
+          </button>
+          <button class="modal-trigger-btn warning" data-modal="modal-warning">
+            <span class="mtb-icon">⚠</span>
+            <span class="mtb-label">Warning Modal</span>
+            <span class="mtb-sub">Confirm action</span>
+          </button>
+          <button class="modal-trigger-btn gallery" data-modal="modal-gallery">
+            <span class="mtb-icon">◈</span>
+            <span class="mtb-label">Skills Modal</span>
+            <span class="mtb-sub">Full skill list</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section" id="form">
+        <div class="section-tag">// 03 — Form Validation</div>
+        <h2 class="section-title">Contact <span>Form</span></h2>
+        <p class="section-sub">
+          Real-time validation on each field. All inputs checked before submit.
+        </p>
+
+        <div class="form-layout">
+          <div class="form-info">
+            <div class="fi-title">Validation Rules</div>
+            <div class="rule-item" id="rule-name">
+              <span class="rule-icon">○</span>
+              <span>Name: 3+ characters, letters only</span>
+            </div>
+            <div class="rule-item" id="rule-email">
+              <span class="rule-icon">○</span>
+              <span>Email: valid format required</span>
+            </div>
+            <div class="rule-item" id="rule-phone">
+              <span class="rule-icon">○</span>
+              <span>Phone: 10 digits (optional)</span>
+            </div>
+            <div class="rule-item" id="rule-subject">
+              <span class="rule-icon">○</span>
+              <span>Subject: must be selected</span>
+            </div>
+            <div class="rule-item" id="rule-message">
+              <span class="rule-icon">○</span>
+              <span>Message: 20+ characters</span>
+            </div>
+            <div class="rule-item" id="rule-agree">
+              <span class="rule-icon">○</span>
+              <span>Terms: must be accepted</span>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="field-wrap">
+                <label for="fname">Full Name <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <input type="text" id="fname" placeholder="Chaouki Ismail" autocomplete="off" />
+                  <span class="field-icon" id="fname-icon"></span>
+                </div>
+                <span class="field-error" id="fname-err"></span>
+              </div>
+              <div class="field-wrap">
+                <label for="femail">Email Address <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    id="femail"
+                    placeholder="you@example.com"
+                    autocomplete="off"
+                  />
+                  <span class="field-icon" id="femail-icon"></span>
+                </div>
+                <span class="field-error" id="femail-err"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field-wrap">
+                <label for="fphone">Phone <span class="opt">(optional)</span></label>
+                <div class="input-wrap">
+                  <input type="tel" id="fphone" placeholder="0695249432" autocomplete="off" />
+                  <span class="field-icon" id="fphone-icon"></span>
+                </div>
+                <span class="field-error" id="fphone-err"></span>
+              </div>
+              <div class="field-wrap">
+                <label for="fsubject">Subject <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <select id="fsubject">
+                    <option value="">-- Select --</option>
+                    <option value="internship">Internship Opportunity</option>
+                    <option value="freelance">Freelance Project</option>
+                    <option value="collab">Collaboration</option>
+                    <option value="question">General Question</option>
+                  </select>
+                  <span class="field-icon" id="fsubject-icon"></span>
+                </div>
+                <span class="field-error" id="fsubject-err"></span>
+              </div>
+            </div>
+
+            <div class="field-wrap full">
+              <label for="fmessage">Message <span class="req">*</span></label>
+              <div class="input-wrap">
+                <textarea
+                  id="fmessage"
+                  placeholder="Tell me about your project or opportunity (min. 20 characters)…"
+                  rows="5"
+                ></textarea>
+                <span class="field-icon" id="fmessage-icon"></span>
+              </div>
+              <div class="char-count"><span id="charCount">0</span> / 20 min</div>
+              <span class="field-error" id="fmessage-err"></span>
+            </div>
+
+            <div class="field-wrap full">
+              <label class="checkbox-label">
+                <input type="checkbox" id="fagree" />
+                <span class="checkbox-box"></span>
+                <span
+                  >I agree to the <a href="#" class="link">terms and conditions</a>
+                  <span class="req">*</span></span
+                >
+              </label>
+              <span class="field-error" id="fagree-err"></span>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" id="resetBtn" class="btn-reset">Reset</button>
+              <button type="submit" id="submitBtn" class="btn-submit">
+                <span id="submitLabel">Send Message</span>
+                <span class="btn-arrow">→</span>
+              </button>
+            </div>
+
+            <div class="form-result" id="formResult"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="blink">&gt;</span> CI<span class="accent">_</span>DEV
+        </div>
+        <p>Chaouki Ismail · Level 1 Task 3 · Codveda Internship 2025</p>
+        <p class="footer-tech">Built with HTML · CSS · Vanilla JavaScript</p>
+      </div>
+    </footer>
+
+    <div class="modal-overlay" id="modal-info">
+      <div class="modal">
+        <div class="modal-header info">
+          <span class="modal-icon">ℹ</span>
+          <span class="modal-title">Developer Info</span>
+          <button class="modal-close" data-close="modal-info">✕</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-info-grid">
+            <div class="mi-row">
+              <span class="mi-label">Name</span><span class="mi-val">Chaouki Ismail</span>
+            </div>
+            <div class="mi-row">
+              <span class="mi-label">Age</span><span class="mi-val">22 years</span>
+            </div>
+            <div class="mi-row">
+              <span class="mi-label">Location</span><span class="mi-val">Tinghir, Morocco</span>
+            </div>
+            <div class="mi-row">
+              <span class="mi-label">School</span><span class="mi-val">OFPPT Tinghir</span>
+            </div>
+            <div class="mi-row">
+              <span class="mi-label">Program</span><span class="mi-val">Full Stack Web Dev</span>
+            </div>
+            <div class="mi-row">
+              <span class="mi-label">Email</span
+              ><span class="mi-val">ismailchaouki111@gmail.com</span>
+            </div>
+            <div class="mi-row">
+              <span class="mi-label">Phone</span><span class="mi-val">0695249432</span>
+            </div>
+            <div class="mi-row">
+              <span class="mi-label">License</span><span class="mi-val">Permis B</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="modal-btn" data-close="modal-info">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-success">
+      <div class="modal">
+        <div class="modal-header success">
+          <span class="modal-icon">✓</span>
+          <span class="modal-title">Task Completed!</span>
+          <button class="modal-close" data-close="modal-success">✕</button>
+        </div>
+        <div class="modal-body center">
+          <div class="success-anim">✓</div>
+          <h3>Level 1 — Task 3 Done!</h3>
+          <p>
+            JavaScript interactivity successfully implemented. Dropdowns, modals, and form
+            validation are all working perfectly.
+          </p>
+          <div class="success-tags">
+            <span>✓ Dropdowns</span>
+            <span>✓ Modals</span>
+            <span>✓ Validation</span>
+            <span>✓ Event Listeners</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="modal-btn success" data-close="modal-success">Awesome!</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-warning">
+      <div class="modal">
+        <div class="modal-header warning">
+          <span class="modal-icon">⚠</span>
+          <span class="modal-title">Confirm Action</span>
+          <button class="modal-close" data-close="modal-warning">✕</button>
+        </div>
+        <div class="modal-body center">
+          <div class="warning-icon">⚠</div>
+          <h3>Are you sure?</h3>
+          <p>
+            This action will reset all form fields and clear any entered data. This cannot be
+            undone.
+          </p>
+        </div>
+        <div class="modal-footer two-btn">
+          <button class="modal-btn ghost" data-close="modal-warning">Cancel</button>
+          <button class="modal-btn warning" id="confirmReset">Yes, Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-gallery">
+      <div class="modal wide">
+        <div class="modal-header gallery">
+          <span class="modal-icon">◈</span>
+          <span class="modal-title">Full Skill List</span>
+          <button class="modal-close" data-close="modal-gallery">✕</button>
+        </div>
+        <div class="modal-body">
+          <div class="skills-modal-grid">
+            <div class="sm-group">
+              <div class="sm-group-title">Frontend</div>
+              <div class="sm-tags">
+                <span>HTML5</span><span>CSS3</span><span>SASS</span> <span>JavaScript ES6+</span
+                ><span>React.js</span> <span>Material UI</span><span>Chakra UI</span>
+                <span>GSAP</span><span>i18next</span>
+              </div>
+            </div>
+            <div class="sm-group">
+              <div class="sm-group-title">Backend</div>
+              <div class="sm-tags">
+                <span>Laravel 12</span><span>PHP</span> <span>Python</span><span>CTkinter</span>
+                <span>MySQL</span><span>JSON Backend</span> <span>REST APIs</span><span>Axios</span>
+              </div>
+            </div>
+            <div class="sm-group">
+              <div class="sm-group-title">Tools</div>
+              <div class="sm-tags">
+                <span>Git</span><span>GitHub</span><span>GitLab</span> <span>VS Code</span
+                ><span>Figma</span> <span>Postman</span><span>XAMPP</span><span>Jira</span>
+              </div>
+            </div>
+            <div class="sm-group">
+              <div class="sm-group-title">Certifications</div>
+              <div class="sm-tags cert">
+                <span>🏅 HTML Fundamentals</span>
+                <span>🏅 CSS Fundamentals</span>
+                <span>🏅 Intro to PHP</span>
+                <span>🏅 JavaScript Beginners</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="modal-btn" data-close="modal-gallery">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
