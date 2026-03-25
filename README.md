@@ -122,8 +122,8 @@ cd level-1/task-3
 
 **Ismail Chaouki**
 
-- GitHub: [https://github.com/ismailchaouki1](https://github.com/your-username)
-- LinkedIn: [https://linkedin.com/in/ismail-chaouki-4b44a3339](https://linkedin.com/in/your-profile)
+- GitHub: [https://github.com/ismailchaouki1](https://github.com/ismailchaouki1)
+- LinkedIn: [https://linkedin.com/in/ismail-chaouki-4b44a3339](https://linkedin.com/in/ismail-chaouki-4b44a3339)
 
 ---
 
