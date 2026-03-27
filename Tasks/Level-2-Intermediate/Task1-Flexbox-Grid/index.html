@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevPulse — Tech Blog by Chaouki Ismail</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-top">
+        <div class="header-meta">
+          <span>Friday, March 27, 2025</span>
+          <span class="sep">·</span>
+          <span>Morocco Edition</span>
+        </div>
+        <div class="header-social">
+          <a href="#">GH</a>
+          <a href="#">in</a>
+          <a href="#">GL</a>
+        </div>
+      </div>
+
+      <div class="header-brand">
+        <div class="brand-line"></div>
+        <h1 class="brand-name">DevPulse<span>.</span></h1>
+        <div class="brand-line"></div>
+      </div>
+
+      <div class="header-tagline">Web Development · Open Source · Career · Tutorials</div>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#topics">Topics</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <div class="nav-right">
+          <div class="search-wrap">
+            <input type="search" placeholder="Search articles…" />
+            <button>⌕</button>
+          </div>
+          <button class="subscribe-btn">Subscribe</button>
+        </div>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-featured">
+          <div class="hero-featured-img">
+            <img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=900&q=80"
+              alt="Featured Article"
+            />
+            <div class="hero-img-overlay"></div>
+          </div>
+          <div class="hero-featured-content">
+            <div class="article-meta">
+              <span class="tag hot">🔥 Featured</span>
+              <span class="dot">·</span>
+              <span class="read-time">8 min read</span>
+              <span class="dot">·</span>
+              <span class="date">Mar 25, 2025</span>
+            </div>
+            <h2 class="hero-title">
+              Building Scalable Full‑Stack Apps with React &amp; Laravel 12
+            </h2>
+            <p class="hero-excerpt">
+              A deep dive into combining React's component model with Laravel's elegant backend —
+              from REST API design to authentication and deployment pipelines.
+            </p>
+            <div class="hero-author">
+              <div class="author-avatar">CI</div>
+              <div class="author-info">
+                <span class="author-name">Chaouki Ismail</span>
+                <span class="author-role">Full Stack Developer · OFPPT Tinghir</span>
+              </div>
+              <a href="#" class="read-more-btn">Read Article →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-sidebar-mini">
+          <div class="trending-label">Trending Now</div>
+
+          <div class="trending-item">
+            <span class="trend-num">01</span>
+            <div class="trend-info">
+              <span class="trend-tag">Python</span>
+              <h4>Building Desktop Apps with CTkinter: A Complete Guide</h4>
+              <span class="trend-meta">5 min · Mar 22</span>
+            </div>
+          </div>
+
+          <div class="trending-item">
+            <span class="trend-num">02</span>
+            <div class="trend-info">
+              <span class="trend-tag">React</span>
+              <h4>State Management in 2025: Context vs Zustand vs Redux</h4>
+              <span class="trend-meta">7 min · Mar 20</span>
+            </div>
+          </div>
+
+          <div class="trending-item">
+            <span class="trend-num">03</span>
+            <div class="trend-info">
+              <span class="trend-tag">CSS</span>
+              <h4>Mastering CSS Grid: Real-World Layout Patterns</h4>
+              <span class="trend-meta">6 min · Mar 18</span>
+            </div>
+          </div>
+
+          <div class="trending-item">
+            <span class="trend-num">04</span>
+            <div class="trend-info">
+              <span class="trend-tag">Laravel</span>
+              <h4>Laravel 12 New Features Every Developer Must Know</h4>
+              <span class="trend-meta">4 min · Mar 15</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="breaking-bar">
+        <span class="breaking-label">BREAKING</span>
+        <div class="breaking-content">
+          <span>🚀 Laravel 12 officially released with major performance upgrades</span>
+          <span class="sep-dot">·</span>
+          <span>⚛️ React 20 beta introduces native signals API</span>
+          <span class="sep-dot">·</span>
+          <span>🐍 Python 3.14 ships with improved typing system</span>
+          <span class="sep-dot">·</span>
+          <span>🌐 CSS Nesting now supported in all major browsers</span>
+        </div>
+      </section>
+
+      <div class="content-wrapper" id="articles">
+        <section class="articles-main">
+          <div class="section-header-row">
+            <h2 class="section-heading">Latest <span>Articles</span></h2>
+            <div class="filter-tabs">
+              <button class="filter-tab active">All</button>
+              <button class="filter-tab">Frontend</button>
+              <button class="filter-tab">Backend</button>
+              <button class="filter-tab">Tools</button>
+            </div>
+          </div>
+
+          <div class="articles-grid">
+            <article class="article-card large">
+              <div class="card-img">
+                <img
+                  src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=700&q=80"
+                  alt="JavaScript"
+                />
+                <span class="card-tag">JavaScript</span>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="read-time">⏱ 6 min</span>
+                  <span class="date">Mar 24, 2025</span>
+                </div>
+                <h3>JavaScript ES2025: Every New Feature Explained with Examples</h3>
+                <p>
+                  From pattern matching to temporal API — a practical walkthrough of what's new in
+                  the latest ECMAScript specification.
+                </p>
+                <div class="card-footer">
+                  <div class="mini-author">
+                    <div class="mini-avatar">CI</div>
+                    <span>Chaouki Ismail</span>
+                  </div>
+                  <a href="#" class="card-link">Read →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card">
+              <div class="card-img short">
+                <img
+                  src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&q=80"
+                  alt="React"
+                />
+                <span class="card-tag">React</span>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="read-time">⏱ 4 min</span>
+                  <span class="date">Mar 23, 2025</span>
+                </div>
+                <h3>Custom Hooks Every React Developer Should Have</h3>
+                <p>
+                  useDebounce, useLocalStorage, useFetch and more — reusable hooks that save hours
+                  of coding.
+                </p>
+                <div class="card-footer">
+                  <div class="mini-author">
+                    <div class="mini-avatar">CI</div>
+                    <span>Chaouki Ismail</span>
+                  </div>
+                  <a href="#" class="card-link">Read →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card">
+              <div class="card-img short">
+                <img
+                  src="https://images.unsplash.com/photo-1661956602116-aa6865609028?w=600&q=80"
+                  alt="CSS"
+                />
+                <span class="card-tag">CSS</span>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="read-time">⏱ 5 min</span>
+                  <span class="date">Mar 21, 2025</span>
+                </div>
+                <h3>CSS Grid vs Flexbox: When to Use Which</h3>
+                <p>
+                  A visual guide to understanding when each layout method shines — with real-world
+                  examples.
+                </p>
+                <div class="card-footer">
+                  <div class="mini-author">
+                    <div class="mini-avatar">CI</div>
+                    <span>Chaouki Ismail</span>
+                  </div>
+                  <a href="#" class="card-link">Read →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card">
+              <div class="card-img short">
+                <img
+                  src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&q=80"
+                  alt="Python"
+                />
+                <span class="card-tag">Python</span>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="read-time">⏱ 7 min</span>
+                  <span class="date">Mar 19, 2025</span>
+                </div>
+                <h3>Python CTkinter: Build Pro Desktop GUIs in 2025</h3>
+                <p>
+                  A complete hands-on guide to building polished, responsive desktop applications
+                  with CTkinter.
+                </p>
+                <div class="card-footer">
+                  <div class="mini-author">
+                    <div class="mini-avatar">CI</div>
+                    <span>Chaouki Ismail</span>
+                  </div>
+                  <a href="#" class="card-link">Read →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card">
+              <div class="card-img short">
+                <img
+                  src="https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?w=600&q=80"
+                  alt="Laravel"
+                />
+                <span class="card-tag">Laravel</span>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="read-time">⏱ 9 min</span>
+                  <span class="date">Mar 17, 2025</span>
+                </div>
+                <h3>Building REST APIs with Laravel 12 from Scratch</h3>
+                <p>
+                  Authentication, resources, validation, and rate limiting — everything you need in
+                  one guide.
+                </p>
+                <div class="card-footer">
+                  <div class="mini-author">
+                    <div class="mini-avatar">CI</div>
+                    <span>Chaouki Ismail</span>
+                  </div>
+                  <a href="#" class="card-link">Read →</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card">
+              <div class="card-img short">
+                <img
+                  src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=600&q=80"
+                  alt="Git"
+                />
+                <span class="card-tag">Git</span>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="read-time">⏱ 3 min</span>
+                  <span class="date">Mar 14, 2025</span>
+                </div>
+                <h3>Git Workflows for Solo Developers &amp; Small Teams</h3>
+                <p>
+                  Feature branching, conventional commits, and release strategies that actually
+                  work.
+                </p>
+                <div class="card-footer">
+                  <div class="mini-author">
+                    <div class="mini-avatar">CI</div>
+                    <span>Chaouki Ismail</span>
+                  </div>
+                  <a href="#" class="card-link">Read →</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="load-more-wrap">
+            <button class="load-more-btn">Load More Articles</button>
+          </div>
+
+          <section class="gallery-section" id="gallery">
+            <div class="section-header-row">
+              <h2 class="section-heading">Photo <span>Gallery</span></h2>
+              <a href="#" class="view-all">View All →</a>
+            </div>
+
+            <div class="photo-gallery">
+              <div class="gallery-item g-tall">
+                <img
+                  src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=600&q=80"
+                  alt="Code"
+                />
+                <div class="gallery-caption">Clean Code</div>
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=600&q=80"
+                  alt="Dev Setup"
+                />
+                <div class="gallery-caption">Dev Setup</div>
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80"
+                  alt="Team Work"
+                />
+                <div class="gallery-caption">Collaboration</div>
+              </div>
+              <div class="gallery-item g-wide">
+                <img
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80"
+                  alt="Laptop Code"
+                />
+                <div class="gallery-caption">Laptop & Code</div>
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&q=80"
+                  alt="App"
+                />
+                <div class="gallery-caption">Mobile First</div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <aside class="sidebar" id="topics">
+          <div class="sidebar-widget">
+            <div class="widget-title">About the Author</div>
+            <div class="author-card">
+              <div class="author-big-avatar">CI</div>
+              <div class="author-big-name">Chaouki Ismail</div>
+              <div class="author-big-role">Full Stack Web Developer</div>
+              <p class="author-big-bio">
+                22 y/o developer from Tinghir, Morocco. Studying at OFPPT — Full Stack Web.
+                Passionate about React, Laravel &amp; Python.
+              </p>
+              <div class="author-stats">
+                <div class="astat">
+                  <span class="astat-num">5+</span>
+                  <span class="astat-label">Projects</span>
+                </div>
+                <div class="astat">
+                  <span class="astat-num">4</span>
+                  <span class="astat-label">Certs</span>
+                </div>
+                <div class="astat">
+                  <span class="astat-num">4</span>
+                  <span class="astat-label">Languages</span>
+                </div>
+              </div>
+              <a href="mailto:ismailchaouki111@gmail.com" class="contact-author-btn">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="sidebar-widget">
+            <div class="widget-title">Topics</div>
+            <div class="topics-cloud">
+              <a href="#" class="topic-tag active">JavaScript</a>
+              <a href="#" class="topic-tag">React</a>
+              <a href="#" class="topic-tag">Laravel</a>
+              <a href="#" class="topic-tag">Python</a>
+              <a href="#" class="topic-tag">CSS Grid</a>
+              <a href="#" class="topic-tag">Flexbox</a>
+              <a href="#" class="topic-tag">MySQL</a>
+              <a href="#" class="topic-tag">REST API</a>
+              <a href="#" class="topic-tag">Git</a>
+              <a href="#" class="topic-tag">Figma</a>
+              <a href="#" class="topic-tag">UI/UX</a>
+              <a href="#" class="topic-tag">PHP</a>
+            </div>
+          </div>
+
+          <div class="sidebar-widget newsletter-widget">
+            <div class="widget-title">Newsletter</div>
+            <p class="newsletter-text">
+              Get the latest articles delivered to your inbox every week.
+            </p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="your@email.com" />
+              <button>→</button>
+            </div>
+          </div>
+
+          <div class="sidebar-widget">
+            <div class="widget-title">My Stack</div>
+            <div class="stack-list">
+              <div class="stack-row">
+                <span class="stack-icon">⚛️</span>
+                <div class="stack-info">
+                  <span class="stack-name">React.js</span>
+                  <div class="stack-bar"><div class="stack-fill" style="width: 85%"></div></div>
+                </div>
+                <span class="stack-pct">85%</span>
+              </div>
+              <div class="stack-row">
+                <span class="stack-icon">🔴</span>
+                <div class="stack-info">
+                  <span class="stack-name">Laravel</span>
+                  <div class="stack-bar"><div class="stack-fill" style="width: 78%"></div></div>
+                </div>
+                <span class="stack-pct">78%</span>
+              </div>
+              <div class="stack-row">
+                <span class="stack-icon">🐍</span>
+                <div class="stack-info">
+                  <span class="stack-name">Python</span>
+                  <div class="stack-bar"><div class="stack-fill" style="width: 80%"></div></div>
+                </div>
+                <span class="stack-pct">80%</span>
+              </div>
+              <div class="stack-row">
+                <span class="stack-icon">🎨</span>
+                <div class="stack-info">
+                  <span class="stack-name">CSS / SASS</span>
+                  <div class="stack-bar"><div class="stack-fill" style="width: 90%"></div></div>
+                </div>
+                <span class="stack-pct">90%</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <section class="cta-section" id="about">
+        <div class="cta-inner">
+          <div class="cta-text">
+            <h2>Want to work together?</h2>
+            <p>
+              I'm open to internships, freelance projects, and collaborations. Let's build something
+              great.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a href="mailto:ismailchaouki111@gmail.com" class="cta-btn primary">Hire Me →</a>
+            <a href="#" class="cta-btn ghost">View GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo">DevPulse<span>.</span></div>
+          <p>
+            A personal tech blog by Chaouki Ismail — Full Stack Web Developer based in Tinghir,
+            Morocco.
+          </p>
+          <div class="footer-socials">
+            <a href="#">GH</a>
+            <a href="#">in</a>
+            <a href="#">GL</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">React</a></li>
+            <li><a href="#">Laravel</a></li>
+            <li><a href="#">Python</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:ismailchaouki111@gmail.com">ismailchaouki111@gmail.com</a></li>
+            <li><a href="#">0695249432</a></li>
+            <li><a href="#">Tinghir, Morocco</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Chaouki Ismail — DevPulse Blog</span>
+        <span>Built with HTML · CSS Flexbox &amp; Grid · JavaScript</span>
+      </div>
+    </footer>
+
+    <script src="style.js"></script>
+  </body>
+</html>
