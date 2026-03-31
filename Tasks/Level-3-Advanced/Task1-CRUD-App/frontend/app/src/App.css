@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+  background-color: #f6f8fa;
+  color: #1f2328;
+  line-height: 1.5;
+}
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar - GitHub Style */
+.sidebar {
+  width: 260px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #d0d7de;
+  z-index: 100;
+}
+
+.sidebar-brand {
+  padding: 1.5rem 1rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid #d0d7de;
+  margin-bottom: 1rem;
+}
+
+.brand-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #1f2328;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.brand-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2328;
+}
+
+.brand-sub {
+  font-size: 0.7rem;
+  color: #57606a;
+  margin-top: 2px;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  width: 100%;
+  font-size: 0.85rem;
+  color: #1f2328;
+  font-weight: 500;
+  text-align: left;
+}
+
+.nav-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.nav-btn.active {
+  background-color: #0969da;
+  color: white;
+}
+
+.nav-icon {
+  font-size: 1rem;
+  width: 20px;
+}
+
+.nav-label {
+  flex: 1;
+}
+
+.nav-badge {
+  background-color: #d0d7de;
+  padding: 2px 6px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #1f2328;
+}
+
+.nav-btn.active .nav-badge {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.sidebar-bottom {
+  padding: 1rem;
+  border-top: 1px solid #d0d7de;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.new-task-btn {
+  padding: 0.5rem 0.75rem;
+  background-color: #2da44e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.new-task-btn:hover {
+  background-color: #2c974b;
+}
+
+.clear-btn {
+  padding: 0.5rem 0.75rem;
+  background-color: #f6f8fa;
+  color: #cf222e;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  font-size: 0.8rem;
+}
+
+.clear-btn:hover {
+  background-color: #ffebe9;
+  border-color: #cf222e;
+}
+
+/* Main Content Area */
+.main {
+  flex: 1;
+  margin-left: 260px;
+  padding: 2rem;
+  max-width: calc(100% - 260px);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2328;
+  margin-bottom: 0.25rem;
+}
+
+.page-sub {
+  color: #57606a;
+  font-size: 0.85rem;
+}
+
+.header-new-btn {
+  padding: 0.5rem 1rem;
+  background-color: #2da44e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-new-btn:hover {
+  background-color: #2c974b;
+}
+
+/* API Error */
+.api-error {
+  background-color: #ffebe9;
+  border-left: 4px solid #cf222e;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: #cf222e;
+  font-size: 0.85rem;
+}
+
+.error-hint {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+/* Confirm Modal - GitHub Style */
+.confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.confirm-box {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 1px solid #d0d7de;
+}
+
+.confirm-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.confirm-msg {
+  color: #1f2328;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.confirm-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.confirm-cancel,
+.confirm-ok {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  font-size: 0.85rem;
+}
+
+.confirm-cancel {
+  background: #f6f8fa;
+  color: #1f2328;
+}
+
+.confirm-cancel:hover {
+  background-color: #f3f4f6;
+}
+
+.confirm-ok {
+  background: #cf222e;
+  color: white;
+  border-color: #cf222e;
+}
+
+.confirm-ok:hover {
+  background-color: #a40e26;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f6f8fa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d0d7de;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8c959f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .main-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
